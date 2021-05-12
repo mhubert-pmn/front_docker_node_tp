@@ -1,0 +1,19 @@
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input {
+    max-width: 20vw;
+}
+
+h1 {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
