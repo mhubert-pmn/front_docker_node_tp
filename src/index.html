@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Demo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class=" logged-out">
+                <h1 class="display-4">Connectez-vous ou inscrivez-vous</h1>
+                <div class="links">
+                    <a href="http://localhost:8080/login.html">Connexion</a>    
+                    <a href="http://localhost:8080/register.html">Inscription</a>                    
+                </div>       
+            </div>
+            <div class="d-none logged-in" >
+                <h1 class="display-4">Bonjour</h1>
+                <hr class="my-4">
+                <a href="http://localhost:8080/logout.html">Cliquer le lien pour accéder à la page de déconnexion</a>
+                <div class="createLink d-none">
+                    <a href="http://localhost:8080/createPost.html">Cliquer pour accéder à la création de posts</a>
+                </div>                
+            </div>
+        </div>
+        <div id="posts" class="logged-in"></div>      
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
